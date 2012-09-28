@@ -1,0 +1,5 @@
+#!python
+cubit.cmd('ls')
+cubit.cmd('ls')
+cubit.cmd('cd ..')
+cubit.cmd('ls')

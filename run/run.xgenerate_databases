@@ -1,0 +1,21 @@
+#!/bin/bash
+
+#rm DATABASES_MPI/*.*
+
+#	d=`date`
+#	echo "Starting compilation $d"
+#        make generate_databases
+#	d=`date`
+#	echo "Finished compilation $d"
+
+
+# compute total number of nodes needed
+NPROC=`grep NPROC DATA/Par_file | cut -d = -f 2`
+
+# total number of nodes is the product of the values read
+
+echo "Submitting job"
+echo $NPROC
+echo "running mesh" 
+LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib mpirun -np $NPROC ./xgenerate_databases 
+echo "database done"

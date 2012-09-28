@@ -1,0 +1,6 @@
+rsync -avuze ssh --delete . gpercy@brutus.ethz.ch:~/FAULT_SOURCE/
+
+## v : verbose , u : preserve newer existing files from overwritting.
+## b : backup existing files before overwritting.
+## e : allows to do remote login ssh.
+## delete : delete different files

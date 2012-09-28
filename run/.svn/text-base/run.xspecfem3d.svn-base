@@ -1,0 +1,20 @@
+#!/bin/bash
+        
+#rm OUTPUT_FILES/*
+
+#	d=`date`
+#	echo "Starting compilation $d"
+#        make specfem3D
+#	d=`date`
+#	echo "Finished compilation $d"
+
+# compute total number of nodes needed
+NPROC=`grep NPROC DATA/Par_file | cut -d = -f 2`
+
+# total number of nodes is the product of the values read
+
+echo "Submitting job"
+echo $NPROC
+echo "running solver"
+LD_LIBRARY_PATH=$LD_LIBRARY_PATH:/usr/local/lib mpirun -np $NPROC ./xspecfem3D &
+echo "solver done"

@@ -1,0 +1,70 @@
+10
+
+dir
+20595
+svn+ssh://svn@geodynamics.org/cig/seismo/3D/FAULT_SOURCE/branches/new_fault_db/EXAMPLES
+svn+ssh://svn@geodynamics.org/cig
+
+
+
+2012-08-20T10:34:24.887539Z
+20595
+percygalvez
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+42e91aa9-f6fe-0310-9bd8-dd834c9eb30a
+
+tpv5.crack
+dir
+
+tpv15.crack
+dir
+
+tpv16.crack
+dir
+
+splay_faults
+dir
+
+tohoku
+dir
+
+DATA
+dir
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+deleted
+
+tpv102
+dir
+
